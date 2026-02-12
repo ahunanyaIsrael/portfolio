@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  font-family: Outfit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --text-color: #f0f1f5;
+  --primary-color-shade-100: #f8e5ff;
+  --primary-color-shade-200: #dcabf1;
+  --primary-color-shade-300: #c172e2;
+  --primary-color-shade-400: #a639d3;
+  --primary-color-shade-500: #8b00c4;
+  --primary-color-shade-600: #6c009b;
+  --primary-color-shade-700: #4e0070;
+  --primary-color-shade-800: #300045;
+  --primary-color-shade-900: #12001a;
+}
+
+@layer components {
+  .action-card {
+    @apply w-80 border-2 rounded-2xl p-4 flex flex-col gap-4 justify-center items-center text-center;
+  }
+  .card {
+    @apply w-90 rounded-2xl text-sm flex flex-col;
+  }
+}
